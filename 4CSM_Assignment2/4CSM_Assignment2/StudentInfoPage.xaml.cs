@@ -30,7 +30,6 @@ namespace _4CSM_Assignment2
             this.InitializeComponent();
         }
         //save
-        public static List<students> studentList = new List<students>();
         private async void button_Click(object sender, RoutedEventArgs e)
         {
             //id
@@ -58,7 +57,7 @@ namespace _4CSM_Assignment2
                 await dialogMessage1.ShowAsync();
             }
             //del
-            studentList = null;
+            App.studentList.Clear();
             //save
             var new_student = new students()
             {
@@ -67,7 +66,7 @@ namespace _4CSM_Assignment2
                 Email = email.Text,
                 Number = number.Text
             };
-            studentList.Add(new_student);
+            App.studentList.Add(new_student);
             var dialogMessage = new MessageDialog("Student details saved!");
             await dialogMessage.ShowAsync();
             //go back to main page

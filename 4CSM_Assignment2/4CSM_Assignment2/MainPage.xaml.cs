@@ -29,11 +29,12 @@ namespace _4CSM_Assignment2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(LoginPage));
+            Frame.Navigate(typeof(StudentDetails));
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(StudentInfoPage));        }
+            Frame.Navigate(typeof(StudentInfoPage));
+        }
     }
 }

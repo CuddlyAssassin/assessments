@@ -30,7 +30,7 @@ namespace _4CSM_Assignment2
         private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
             string txt = "";
-            foreach (students s in studentList)
+            foreach (students s in App.studentList)
             {
                 txt += s.Id + " ";
                 txt += s.Name + " ";
